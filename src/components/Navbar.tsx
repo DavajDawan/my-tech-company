@@ -7,7 +7,7 @@ export default function Navbar({ setLanguage }: { setLanguage: (lang: "en" | "ku
     <nav className="fixed w-full top-0 left-0 bg-black/80 backdrop-blur-md z-50">
       <div className="max-w-7xl mx-auto flex justify-between items-center p-4">
         {/* Logo / namn */}
-        <h1 className="text-xl font-bold text-white">MERNETIC</h1>
+        <h1 className="text-xl font-bold text-white ">MERNETIC</h1>
 
         {/* Navigeringslänkar + språk */}
         <div className="space-x-6 hidden md:flex items-center">
