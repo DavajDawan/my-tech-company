@@ -5,7 +5,7 @@ import { useState } from "react";
 import { translations } from "@/src/data/translations";
 import Navbar from "@/src/components/Navbar";
 import Footer from "@/src/components/Footer";
-import { GoogleTagManager } from "@next/third-parties/google";
+import { GoogleAnalytics  } from "@next/third-parties/google";
 
 function getInitialLanguage(): "ku" | "en" {
   if (typeof navigator === "undefined") return "ku";
@@ -20,7 +20,7 @@ export default function Home() {
   return (
     
     <main className="bg-black text-white min-h-screen">
-      <GoogleTagManager gtmId="G-08RZWTKW75" />
+    <GoogleAnalytics gaId="G-08RZWTKW75" />
       {/* Navbar med språkväxlare */}
       <Navbar setLanguage={setLanguage} />
 
