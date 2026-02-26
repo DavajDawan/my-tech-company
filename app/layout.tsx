@@ -22,8 +22,8 @@ export default function RootLayout({
 }) {
   const [language, setLanguage] = useState<"en" | "ku">(() => {
     if (typeof navigator !== "undefined") {
-      const browserLang = navigator.language || "en";
-      return browserLang.startsWith("ku") ? "ku" : "en";
+      const browserLang = navigator.language || "ku";
+      return browserLang.startsWith("ku") ? "en" : "ku";
     }
     return "en";
   });

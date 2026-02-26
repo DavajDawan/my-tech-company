@@ -6,10 +6,10 @@ import { translations } from "@/src/data/translations";
 import Navbar from "@/src/components/Navbar";
 import Footer from "@/src/components/Footer";
 
-function getInitialLanguage(): "en" | "ku" {
-  if (typeof navigator === "undefined") return "en";
-  const browserLang = navigator.language || navigator.languages?.[0] || "en";
-  return browserLang.startsWith("ku") ? "ku" : "en";
+function getInitialLanguage(): "ku" | "en" {
+  if (typeof navigator === "undefined") return "ku";
+  const browserLang = navigator.language || navigator.languages?.[0] || "ku";
+  return browserLang.startsWith("en") ? "en" : "ku";
 }
 
 export default function Home() {
